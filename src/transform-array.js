@@ -3,7 +3,7 @@ const CustomError = require("../extensions/custom-error");
 module.exports = function transform(arr) {
   if (!Array.isArray(arr)) throw new Error('It\'s not an array');
   let a = [], l, k = 0, n = 0;
-  
+ 
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] != "--discard-next" && arr[i] != "--discard-prev" && arr[i] != "--double-next" && arr[i] != "--double-prev") {
       a[k] = arr[i];
